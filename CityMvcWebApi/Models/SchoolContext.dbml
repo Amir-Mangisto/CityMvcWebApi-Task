@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CityDB" Class="SchoolContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-IGIOI52;Initial Catalog=CityDB;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CityDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.School" Member="Schools">
+    <Type Name="School">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SchoolName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="isPublic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="QuantityOfStudents" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
